@@ -1,0 +1,87 @@
+OBJECT ORIENTED PROGRAMMING SYSTEM (OOPS) – INTERVIEW NOTES
+
+1. What is Object-Oriented Programming?
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects.
+Objects contain both data (variables) and methods (functions). OOP helps in organizing complex
+programs, improving code reusability, scalability, and maintainability.
+
+2. What are the main principles of OOPS?
+The four main principles of OOPS are:
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+3. What is Encapsulation?
+Encapsulation is the process of wrapping data and methods into a single unit called a class.
+It helps in data hiding and protects the data from unauthorized access.
+
+Example:
+A class with private variables and public getter/setter methods.
+
+4. What is Abstraction?
+Abstraction hides implementation details and shows only essential features of an object.
+It is achieved using abstract classes and interfaces.
+
+Example:
+Using an interface to define methods without implementation.
+
+5. What is Inheritance?
+Inheritance allows one class to acquire the properties and methods of another class.
+The class that inherits is called the child class, and the class being inherited is the parent class.
+
+Example:
+class Animal → class Dog
+
+6. What is Polymorphism?
+Polymorphism means "many forms".
+It allows methods to perform different tasks based on the object.
+
+Types of Polymorphism:
+1. Compile-time polymorphism (Method Overloading)
+2. Run-time polymorphism (Method Overriding)
+
+7. What is a Class?
+A class is a blueprint or template used to create objects.
+It defines properties and behaviors that objects will have.
+
+8. What is an Object?
+An object is an instance of a class.
+It represents a real-world entity.
+
+Example:
+Class: Car
+Object: BMW, Audi
+
+9. Difference between Abstract Class and Interface
+Abstract Class:
+- Can have abstract and non-abstract methods
+- Supports constructors
+
+Interface:
+- Supports only abstract methods (before Java 8)
+- No constructors
+
+10. What is Method Overloading?
+Method overloading allows multiple methods with the same name but different parameters.
+
+11. What is Method Overriding?
+Method overriding occurs when a child class provides a specific implementation of a method
+already defined in the parent class.
+
+12. What is Constructor?
+A constructor is a special method used to initialize objects.
+It has the same name as the class.
+
+13. What is this keyword?
+The 'this' keyword refers to the current object of the class.
+
+14. What is super keyword?
+The 'super' keyword refers to the parent class object.
+
+15. Advantages of OOPS
+- Code reusability
+- Improved security
+- Easy maintenance
+- Better scalability
+- Real-world modeling

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KnowSync – Smart Data Companion</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(120deg, #eef2f3, #d9e7ff);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            width: 650px;
+            padding: 30px 35px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4a6cf7;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            background: #4a6cf7;
+            color: white;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: #3957d8;
+        }
+
+        .answer-box {
+            margin-top: 25px;
+            padding: 18px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .answer-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .path {
+            display: block;
+            font-size: 13px;
+            color: #555;
+            margin-top: 3px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>KnowSync</h1>
+        <div class="subtitle">Your Personal Smart Data Companion</div>
+
+        <!-- ✅ ASK BOX IS HERE -->
+        <form method="post" action="/ask">
+            <input 
+                type="text" 
+                name="question" 
+                placeholder="Ask things like: Where is my resume? or Summarize my resume"
+                required
+            />
+            <button type="submit">Ask KnowSync</button>
+        </form>
+
+        {% if answer %}
+        <div class="answer-box">
+            <div class="answer-title">Answer</div>
+            {{ answer | safe }}
+        </div>
+        {% endif %}
+
+        <div class="footer">
+            Runs completely offline • Your data never leaves your system
+        </div>
+    </div>
+</body>
+</html>
